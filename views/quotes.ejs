@@ -1,0 +1,15 @@
+<html>
+        <body>
+            <div style="text-align:center">
+                <h1>Here are the awsome quotes!</h1>
+            </div>
+            <div class="quoteList" >
+                <% for (var q in quotes_from_templates) { %>
+                    <div style="border-bottom: solid 1px;; padding: 5px; margin: 5px; width: 400px;">
+                        <h4>Quote: <%= quotes_from_templates[q].quote %></h4>
+                        <p>      - <%= quotes_from_templates[q].name %> at <%= quotes_from_templates[q].createdAt %></p>
+                    </div>        
+                <% } %>
+            </div>
+        </body>
+    </html>
